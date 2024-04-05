@@ -1,3 +1,4 @@
+import "bootstrap";
 import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
@@ -6,7 +7,7 @@ const ramdonGenerate = Array => {
   return randomIndex;
 };
 window.onload = function() {
-  const palos = [":diamantes:", ":corazones:", ":picas:", ":tréboles:"];
+  const palos = ["♦", "♥", "♠", "♣"];
   const numeros = [
     "A",
     "2",
@@ -23,9 +24,15 @@ window.onload = function() {
     "K"
   ];
   const ramdonpalo = palos[ramdonGenerate(palos)];
-  console.log(ramdonGenerate(palos));
-  console.log(palos.length);
+  console.log(ramdonpalo);
   const ramdonnumero = numeros[ramdonGenerate(numeros)];
   console.log(ramdonnumero);
+  let numero = document.querySelector(".numero");
+  let palo = document.querySelectorAll("#palo");
+  numero.innerHTML = ramdonnumero;
+  for (let index = 0; index < palo.length; index++) {
+    palo[index].classList.add(ramdonpalo);
+    palo[index].innerHTML = ramdonpalo;
+  }
   console.log("Hello Rigo from the console!");
 };

@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset=“UTF-8” />
-    <meta name=“viewport” content=“width=device-width, initial-scale=1.0” />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link
-      
-      href=“https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css”
-      rel=“stylesheet”
-      integrity=“sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH”
-      crossorigin=“anonymous”
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-    <script
-      crossorigin=“anonymous”
-    ></script>
   </head>
-  <body class=“bg-success”>
-    <div class=“card rounded-4 mx-auto my-5” style="width: 200px;">
-      <div class=“card-body”>
-        <h5 class=“card-title”></h5>
-        <h6 class=“card-subtitle mb-2 text-body-secondary”</h6>
+  <body class="bg-success">
+    <div id="container" class="container-fluid">
+      <div class="cards container">
+        <div class="row palos">
+          <div id="palo" class="paloarriba">
+            ♥
+          </div>
+        </div>
+
+        <div class="row numeros">
+          <p class="numero">
+            J
+          </p>
+        </div>
+        <div class="row palos">
+          <div id="palo" class="paloabajo">
+            ♥
+          </div>
+        </div>
       </div>
+      <div>
+        <p id="textPrincipal">Carta aleatoria..</p>
+      </div>
+      <button id="newButton">
+        d Generate new card
+      </button>
     </div>
-    <button id=“newButton”>
-      Generate new card
-    </button>
     <script
-      src=“https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js”
-      integrity=“sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r”
-      crossorigin=“anonymous”
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
     ></script>
     <script
-      src=“https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js”
-      integrity=“sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy”
-      crossorigin=“anonymous”
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
     ></script>
   </body>
 </html>
-
-

@@ -1,1 +1,17 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.cards {
+  background-color: white;
+  width: 40vw;
+  height: 50vw;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.palos {
+  height: 20%;
+}
+.numeros {
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
