@@ -31,8 +31,11 @@ window.onload = function() {
   for (let index = 0; index < palo.length; index++) {
     palo[index].classList.add(ramdonpalo);
     palo[index].innerHTML = ramdonpalo;
-    if (ramdonpalo === "♠" || ramdonpalo === "♣") {
+    if (ramdonpalo === "♦" || ramdonpalo === "♣") {
       palo[index].classList.add("text-dark");
     }
   }
 };
+document.getElementById("reloadButton").addEventListener("click", function() {
+  location.reload();
+});
