@@ -1,7 +1,5 @@
 import "bootstrap";
 import "./style.css";
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
 const ramdonGenerate = Array => {
   const randomIndex = Math.floor(Math.random() * Array.length);
   return randomIndex;
@@ -33,6 +31,8 @@ window.onload = function() {
   for (let index = 0; index < palo.length; index++) {
     palo[index].classList.add(ramdonpalo);
     palo[index].innerHTML = ramdonpalo;
+    if (ramdonpalo === "♠" || ramdonpalo === "♣") {
+      palo[index].classList.add("text-dark");
+    }
   }
-  console.log("Hello Rigo from the console!");
 };
